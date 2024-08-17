@@ -1,4 +1,6 @@
 /data/db/*
 crawlab/master/*
-.crawlab/master
-.idea
+!crawlab/master/
+.crawlab/master/*
+!.crawlab/master/
+.idea/
