@@ -1,0 +1,4 @@
+/data/db/*
+crawlab/master/*
+.crawlab/master
+.idea
