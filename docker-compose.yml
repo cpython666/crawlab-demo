@@ -4,7 +4,7 @@ services:
     image: crawlabteam/crawlab
     platform: linux/amd64
     container_name: crawlab_master
-    restart: always
+    restart: no
     environment:
       CRAWLAB_NODE_MASTER: "Y"  # Y: 主节点
       CRAWLAB_MONGO_HOST: "mongo"  # mongo host address. 在 Docker-Compose 网络中，直接引用 service 名称
@@ -24,7 +24,7 @@ services:
 
   mongo:
     image: mongo:4.2
-    restart: always
+    restart: no
     environment:
       MONGO_INITDB_ROOT_USERNAME: "username"  # mongo username
       MONGO_INITDB_ROOT_PASSWORD: "password"  # mongo password
